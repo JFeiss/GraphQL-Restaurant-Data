@@ -1,4 +1,4 @@
-# graphiQL-restaurantData
+# GraphQL-Restaurant-Data
 GraphQL restaurant Data - quey and mutations to  perform CRUD operations
 run https://localhost:5500/graphQL
 run mutations
