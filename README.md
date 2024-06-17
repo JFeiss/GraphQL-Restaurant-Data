@@ -3,44 +3,35 @@
 
 GraphQL restaurant Data - quey and mutations to  perform CRUD operations
 run https://localhost:5500/graphQL
-run mutations
-mutation editrestaurants($idd: Int = 1, $name: String = "OLDO") {
+mutation editrestaurant($idd: Int = 1, $name: String = "OLDO") {
   editrestaurant(id: $idd, name: $name) {
     name
     description
   }
 }
 
-mutation setrestaurants {
-  setrestaurant(input: {
-    id: 4
-    name: "Granite",
-    description: "American",
-  }) {
-    id
+mutation setrestaurant {
+  setrestaurant(input: {name: "Granite", description: "American"}) {
     name
     description
   }
 }
 
-mutation deleterestaurants($iid: Int = 2) {
+mutation deleterestaurant($iid: Int = 1) {
   deleterestaurant(id: $iid) {
     ok
   }
 }
-query getrestaurant($iid: Int = 1) {
-  restaurant(id: $iid){
+
+query restaurant($iid: Int = 1) {
+  restaurant(id: $iid) {
     name
     description
-    dishes {
-      name
-      price
-    }
   }
 }
+
 query getrestaurants {
   restaurants {
-    id
     name
     description
     dishes {
