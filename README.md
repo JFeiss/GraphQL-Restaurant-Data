@@ -2,7 +2,7 @@
 <img src= "Screenshot 1restaurant.png" width='300'/>
 
 GraphQL restaurant Data - quey and mutations to  perform CRUD operations
-run https://localhost:5500/graphQL
+run https://localhost:5500/graphQL<br>
 mutation editrestaurant($idd: Int = 1, $name: String = "OLDO") {
   editrestaurant(id: $idd, name: $name) {
     name
