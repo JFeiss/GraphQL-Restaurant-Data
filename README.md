@@ -1,4 +1,6 @@
 # GraphQL-Restaurant-Data
+<img src= "Screenshot 1restaurant.png" width='300'/>
+
 GraphQL restaurant Data - quey and mutations to  perform CRUD operations
 run https://localhost:5500/graphQL
 run mutations
